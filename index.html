@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Kaan / spy#3905</title>
+    <script>
+        var originalTitle = document.title; // orijinal başlığı kaydet
+      
+        window.onload = function() {
+          originalTitle = document.title; // sayfa yüklendiğinde başlığı kaydet
+        }
+      
+        window.onblur = function() {
+          document.title = "I'm sorry you're gone"; // sayfadan ayrılırken başlığı değiştir
+        }
+      
+        window.onfocus = function() {
+          document.title = originalTitle; // geri döndüğünde başlığı eski haline getir
+        }
+      </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/photo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="discord.js"></script>
+</head>
+<body>
+    <video autoplay loop muted onclick="playaudio.play();">
+        <source src="drill-2.mp4" type="video/mp4">
+    </video>
+    <audio loop id="playaudio">
+        <source src="it-was-me-drill.mp3">
+    </audio>
+
+    <p class="head"><a href="index.html"><img class="imgc" src="img/photo.jpg" height="45"> Kaan / spy#3905</a></p>
+    <div class="center">
+        <p class="first">
+            
+            <div class="icon">
+                <a href="https://open.spotify.com/user/31baho7t7rdkql6d4gnbtsv2vavu?si=c709c9050e724834">
+                <img class="imgc" src="img/spotify.png" height="40">
+                <p class="i">Spotify</p></a>
+            </div>
+            <span class="blue">•</span> 
+            <div class="icon">
+                <a href="https://www.instagram.com/k4anxyz/">
+                <img class="imgc" src="img/instagram.png" height="40">
+                <p class="i">Instagram</p></a>
+            </div>
+            <span class="blue">•</span> 
+            <div class="icon">
+                <a href="https://www.youtube.com/channel/UCAtuMmzykKtVvJSyaJIaRKg">
+                <img class="imgc" src="img/youtube.png" height="40">
+                <p class="i">Youtube</p></a>
+            </div>
+            <span class="blue">•</span> 
+            <div class="icon">
+                <a href="">
+                <img class="imgc" src="img/project.png" height="40">
+                <p class="i">Projects</p></a>
+            </div>
+        </p>
+        <p class="second">
+            
+        </p>
+    </div>
+    <div class="mobile">
+       <a href="index.html"><img class="imgc" src="img/photo.jpg" height="45"></a>
+       <p style="margin-top: 25px;">
+        <div class="icon">
+            <a href="https://open.spotify.com/user/31baho7t7rdkql6d4gnbtsv2vavu?si=c709c9050e724834">
+            <img class="imgc" src="img/spotify.png" height="40">
+        </div>
+        <div class="icon">
+            <a href="https://www.instagram.com/k4anxyz/">
+            <img class="imgc i" src="img/instagram.png" height="30">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="https://www.youtube.com/channel/UCAtuMmzykKtVvJSyaJIaRKg">
+            <img class="imgc i" src="img/youtube.png" height="30">
+            </a>
+        </div>
+        <div class="icon">
+            <a href="">
+            <img class="imgc" src="img/project.png" height="40">
+            </a>
+        </div>
+       </p>
+    </div>
+    <p id="ds" style="display: none; pointer-events: none;">Discord ID Copied!</p>
+</body>
+</html>
